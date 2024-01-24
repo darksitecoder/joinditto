@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/90ed2f10dc.js" crossorigin="anonymous"></script>
+    <style>
+
+*{
+  font-family: 'Roboto', sans-serif !important;
+  font-weight: 600 !important;
+}
+.navbar .navbar-brand img {
+  max-width: 100px;
+}
+.navbar .navbar-nav .nav-link {
+  color: #000;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.buy{
+  background-color: #209ff4;
+  color: #fff !important;
+  border: none;
+  border-radius: 5px;
+  padding:0px;  
+  cursor: pointer;
+}
+
+.buy:hover{
+  background-color: #000000;
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar {
+    letter-spacing: 0.1em;
+  }
+  .navbar .navbar-nav .nav-link {
+    padding: 0.5em 1em;
+  }
+  .search-and-icons {
+    width: 50%;
+  }
+  .search-and-icons form {
+    flex: 1;
+  }
+}
+@media screen and (min-width: 768px) {
+  .navbar .navbar-brand img {
+    max-width: 7em;
+  }
+  .navbar .navbar-collapse {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+  }
+  .search-and-icons {
+    display: flex;
+    align-items: center;
+  }
+}
+.search-and-icons form input {
+  border-radius: 0;
+  height: 2em;
+  background: #fff
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='grey' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'/%3E%3C/svg%3E")
+    no-repeat 95%;
+}
+.search-and-icons form input:focus {
+  background: #fff;
+  box-shadow: none;
+}
+.search-and-icons .user-icons div {
+  padding-right: 1em;
+}
+.contact-info p,
+.contact-info a {
+  font-size: 0.9em;
+  padding-right: 1em;
+  color: grey;
+}
+.contact-info a {
+  padding-right: 0;
+}
+
+    </style>
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md">
+      <div class="container-xl">
+        <a class="navbar-brand" href="#">
+          <img src="https://joinditto.in/static/2ef89b7a1f6efbff596990cfc23a80e7/72740/logo.png" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Health Insurance <i class="fa-solid fa-angle-down"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <div class="row">
+                  <div class="col">
+                    <li><a href="">Hello</a></li>
+                  </div>
+                  <div class="col">
+                    <li><a href="">Hello</a></li>
+                  </div>
+                </div>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Life Insurance <i class="fa-solid fa-angle-down"></i>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Claims</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Careers</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link buy">Buy Insurence</a>
+            </li>
+            
+          </ul>
+          
+        </div>
+        <li class="nav-item" style="list-style-type: none;">
+          <a class="nav-link" href="#"><i class="fa-solid fa-phone-volume"></i> Hotline</a>
+        </li>
+      </div>
+    </nav>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
