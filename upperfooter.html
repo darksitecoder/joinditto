@@ -11,6 +11,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 
+<script src="https://kit.fontawesome.com/90ed2f10dc.js" crossorigin="anonymous"></script>
+
     <title></title>
 
     <style>
@@ -22,6 +24,9 @@
 .why-choose{
     background-color: #f5f6f7;
     padding: 4rem 1rem;
+}
+.why-choose .container .row .why-choose-ditto{
+    margin-top: 10rem;
 }
 
 .why-choose h3{
@@ -42,13 +47,34 @@ ul {
 ul li:before {
   content: '✓';
 }
+.info{
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition:0.5s ease-in-out;
+    width: 80%;
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+.info:hover{
+    scale: 1.1;
+}
+.info .row img{
+    width: 50px;
+}
+
+.info .row p{
+    font-size: 14px;
+}
     </style>
   </head>
   <body>
     <section class="why-choose">
     <div class="container">
         <div class="row">
-            <div class="col">
+            <div class="col why-choose-ditto">
                <h3 class="font-weight-bolder">Why you should buy from Ditto</h3>
 <p>If you're still reading this, we are pretty sure you already recognize the benefit of using Ditto. However, if you are still not convinced, here's a few extra points to change your mind</p>
 
@@ -59,7 +85,33 @@ ul li:before {
 </ul>
             </div>
             <div class="col">
-                
+                <div class="info">
+                    <div class="row">
+                        <div class="col-2"><img src="	https://joinditto.in/static/8fd51c4646d783e855d7495d643c5398/893f7/shield.webp" alt="" srcset=""></div>
+                        <div class="col-8"><h4>Buy Insurance</h4>
+                        <p>Use our intuitive platform to understand, compare & buy a comprehensive plan</p>
+                    </div>
+                        <div class="col-2"><i class="fa-solid fa-angle-right"></i></div>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="row">
+                        <div class="col-2"><img src="	https://joinditto.in/static/e5e6784188fc2529698592809b58edeb/893f7/hotline.webp" alt="" srcset=""></div>
+                        <div class="col-8"><h4>Ditto Hotline</h4>
+                        <p>If you need personalized advice, book a call with the best advisors in town</p>
+                    </div>
+                        <div class="col-2"><i class="fa-solid fa-angle-right"></i></div>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="row">
+                        <div class="col-2"><img src="	https://joinditto.in/static/c70e382f2f74355e2e2aa92e4c7d532d/893f7/know_insurance.webp" alt="" srcset=""></div>
+                        <div class="col-8"><h4>Understand your Insurance</h4>
+                        <p>If you already have a health plan, you can see what it's lacking here</p>
+                    </div>
+                        <div class="col-2"><i class="fa-solid fa-angle-right"></i></div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
